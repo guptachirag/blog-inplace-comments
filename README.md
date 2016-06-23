@@ -3,7 +3,7 @@ Django Rest Framework POC - A blog with inplace comments
 
 APIs
 
-POST /api/posts/
+# POST /api/posts/
 
 Request - 
 {
@@ -41,7 +41,7 @@ Response -
     "title": "title1"
 }
 
-POST /api/comments
+# POST /api/comments
 
 Request - 
 
@@ -58,9 +58,9 @@ Response -
 }
 
 
-GET /api/posts
+# GET /api/posts
 or
-GET /api/posts/?page=2
+# GET /api/posts/?page=2
 
 Response -
 [
@@ -156,7 +156,7 @@ Response -
 }
 ]
 
-GET /api/posts/2
+# GET /api/posts/2
 
 Response - 
 
