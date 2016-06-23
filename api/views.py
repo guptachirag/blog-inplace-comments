@@ -21,7 +21,11 @@ class PostView(APIView):
     def get(self, request):
         page = request.GET.get('page', 1)
         paginator = Paginator(Post.objects.all(), 5)
-        posts = paginator.page(page)
+        try:
+            posts = paginator.page(page)
+        except:
+            posts = paginator.page(1)
+
         serializer = PostSerializer(posts, many=True)
         return Response(serializer.data)
 

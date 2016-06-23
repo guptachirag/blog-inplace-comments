@@ -11,7 +11,7 @@ class CommentSerializer(serializers.ModelSerializer):
 class ParagraphSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Paragraph
-        extra_kwargs = {'post': {'write_only': True}}
+        exclude = ('post',)
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -31,7 +31,7 @@ class ParagraphCommentSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
     class Meta:
         model = models.Paragraph
-        extra_kwargs = {'post': {'write_only': True}}
+        exclude = ('post',)
 
 
 class PostCommentSerializer(serializers.ModelSerializer):
