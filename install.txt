@@ -6,6 +6,7 @@ pip install -r requirement.txt
 
 2. To get database run following commands in the same directory
 python manage.py makemigrations
+python manage.py makemigrations api
 python manage.py migrate
 
 3. Finally to run the server run following in the same directory
