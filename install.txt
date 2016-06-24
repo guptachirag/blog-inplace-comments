@@ -1,6 +1,6 @@
 Complete following steps berfore trying apis from READ.md
 
-1. To install them run following command in root directory (directory that contains this file).
+1. To install python modules run following command in root directory (directory that contains this file).
 
 pip install -r requirement.txt
 
