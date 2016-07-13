@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog With Inplace Comments</title>
+    {% block css %}
+    <link rel="stylesheet" tyep="text/css" href="{% static 'web/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" tyep="text/css" href="{% static 'web/css/bootstrap-theme.min.css' %}">
+    {% endblock %}
+  </head>
+  <body>
+    {% block header %}
+    <nav class="navbar">
+      <h1>Blog</h1>
+    </nav>
+    {% endblock %}
+    {% block content %}{% endblock %}
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

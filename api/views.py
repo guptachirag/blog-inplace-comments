@@ -1,13 +1,14 @@
 from django.http import Http404
-from django.core.paginator import Paginator
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from api.models import (
-    Post,
+from api.daos import (
+    PostDAO,
 )
+
+from api.models import Post
 
 from api.serializers import (
     PostSerializer,
@@ -17,17 +18,10 @@ from api.serializers import (
 
 
 class PostView(APIView):
-
+    post_dao = PostDAO()
     def get(self, request):
-        page = request.GET.get('page', 1)
-        paginator = Paginator(Post.objects.all(), 5)
-        try:
-            posts = paginator.page(page)
-        except:
-            posts = paginator.page(1)
-
-        serializer = PostSerializer(posts, many=True)
-        return Response(serializer.data)
+        posts = self.post_dao.get_posts(request.GET)
+        return Response(posts)
 
     def post(self, request):
         serializer = PostSerializer(data=request.data)
