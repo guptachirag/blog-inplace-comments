@@ -8,40 +8,40 @@ Django Rest Framework POC - A blog with inplace comments
 Request - 
 ```
 {
-  "title": "title1",
-    "paragraphs": [
-      {
-        "text": "para1"
-      },
-      {
-        "text": "para2"
-      },
-      {
-        "text": "para3"
-      }
-    ]
+  "title":"title1",
+  "paragraphs":[
+    {
+      "text":"para1"
+    },
+    {
+      "text":"para2"
+    },
+    {
+      "text":"para3"
+    }
+  ]
 }
 ```
 
 Response - 
 ```
 {
-  "id": 17,
-    "paragraphs": [
-      {
-        "id": 46,
-        "text": "para1"
-      },
-      {
-        "id": 47,
-        "text": "para2"
-      },
-      {
-        "id": 48,
-        "text": "para3"
-      }
-    ],
-    "title": "title1"
+  "id":17,
+  "paragraphs":[
+    {
+      "id":46,
+      "text":"para1"
+    },
+    {
+      "id":47,
+      "text":"para2"
+    },
+    {
+      "id":48,
+      "text":"para3"
+    }
+  ],
+  "title":"title1"
 }
 ```
 
