@@ -1,4 +1,4 @@
-# blog-inplace-comments
+# Blog With Inplace Comments
 Django Rest Framework POC - A blog with inplace comments
 
 ## APIs
