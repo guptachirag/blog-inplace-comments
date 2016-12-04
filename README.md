@@ -5,8 +5,8 @@ Django Rest Framework POC - A blog with inplace comments
 
 ### POST /api/posts/
 
-```
 Request - 
+```
 {
   "title": "title1",
     "paragraphs": [
@@ -21,8 +21,10 @@ Request -
     }
     ]
 }
+```
 
 Response - 
+```
 {
   "id": 17,
     "paragraphs": [
@@ -41,29 +43,32 @@ Response -
     ],
     "title": "title1"
 }
+```
 
 ### POST /api/comments
 
 Request - 
-
+```
 {
   "text": "comment8",
     "paragraph": 7
 }
+```
 
 Response - 
-
+```
 {
   "id": 8,
     "text": "comment8"
 }
-
+```
 
 ### GET /api/posts
 or
 ### GET /api/posts/?page=2
 
 Response -
+```
 [
 {
   "id": 1,
@@ -156,11 +161,12 @@ Response -
   "title": "title1"
 }
 ]
+```
 
 ### GET /api/posts/2
 
 Response - 
-
+```
 {
   "id": 2,
     "paragraphs": [
