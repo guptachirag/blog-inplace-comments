@@ -10,15 +10,15 @@ Request -
 {
   "title": "title1",
     "paragraphs": [
-    {
-      "text": "para1"
-    },
-    {
-      "text": "para2"
-    },
-    {
-      "text": "para3"
-    }
+      {
+        "text": "para1"
+      },
+      {
+        "text": "para2"
+      },
+      {
+        "text": "para3"
+      }
     ]
 }
 ```
@@ -28,18 +28,18 @@ Response -
 {
   "id": 17,
     "paragraphs": [
-    {
-      "id": 46,
-      "text": "para1"
-    },
-    {
-      "id": 47,
-      "text": "para2"
-    },
-    {
-      "id": 48,
-      "text": "para3"
-    }
+      {
+        "id": 46,
+        "text": "para1"
+      },
+      {
+        "id": 47,
+        "text": "para2"
+      },
+      {
+        "id": 48,
+        "text": "para3"
+      }
     ],
     "title": "title1"
 }
@@ -51,7 +51,7 @@ Request -
 ```
 {
   "text": "comment8",
-    "paragraph": 7
+  "paragraph": 7
 }
 ```
 
@@ -59,7 +59,7 @@ Response -
 ```
 {
   "id": 8,
-    "text": "comment8"
+  "text": "comment8"
 }
 ```
 
