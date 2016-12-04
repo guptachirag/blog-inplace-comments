@@ -5,6 +5,7 @@ Django Rest Framework POC - A blog with inplace comments
 
 ### POST /api/posts/
 
+```
 Request - 
 {
   "title": "title1",
@@ -199,3 +200,4 @@ Response -
   ],
   "title": "title1"
 }
+```
